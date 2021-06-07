@@ -26,7 +26,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+CAN_HandleTypeDef hcan1;
 
+I2C_HandleTypeDef hi2c1;
+I2C_HandleTypeDef hi2c2;
+
+SPI_HandleTypeDef hspi5;
+
+UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart3;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,15 +52,6 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-CAN_HandleTypeDef hcan1;
-
-I2C_HandleTypeDef hi2c1;
-I2C_HandleTypeDef hi2c2;
-
-SPI_HandleTypeDef hspi5;
-
-UART_HandleTypeDef huart1;
-UART_HandleTypeDef huart3;
 
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
